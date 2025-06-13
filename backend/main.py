@@ -79,7 +79,7 @@ async def obter_produto(produto_id: str):
     produto = await produto_collection.find_one({"_id": ObjectId(produto_id)})
     if produto:
         return produto_helper(produto)
-    raise HTTPException(status_code=404, detail=f"Produto com id {id} não encontrado")
+    raise HTTPException(status_code=404, detail=f"Produto com id {produto_id} não encontrado")
 
 @app.put("/produtos/{produto_id}", response_description="Atualizar um produto", response_model=Produto)
 async def atualizar_produto(produto_id: str, produto_data: Produto = Body(...)):

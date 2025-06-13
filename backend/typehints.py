@@ -1,14 +1,14 @@
 # -----------------------------------------------------------
 
-# nome: str = "João"
-# idade: int = 28
+nome: str = "João"
+idade: int = 28
 
-# print(nome, idade)
+print(nome, idade)
 
-# def somar(a: int, b: int) -> int:
-#     return a + b
+def somar(a: int, b: int) -> int:
+    return a + b
 
-# print(somar(5, 4))
+print(somar(5, 4))
 
 # -----------------------------------------------------------
 

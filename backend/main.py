@@ -1,3 +1,8 @@
+# Ativar ambiente virtual
+# python -m venv fastApi
+# source fastApi/bin/activate  # Linux/Mac
+# fastApi\Scripts\activate  # Windows
+
 # Instala o framework FastAPI
 # pip install fastapi
 # pip install "pymongo[srv]"

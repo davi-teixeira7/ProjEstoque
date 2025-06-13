@@ -1,5 +1,4 @@
 import motor.motor_asyncio
-from bson import ObjectId
 
 # Sua string de conexão que você já tem
 MONGO_DETAILS = "mongodb+srv://aluno_fastapi:senhamuitoforte@cluster0.obrt9w8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"

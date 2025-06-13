@@ -35,11 +35,11 @@ app.add_middleware(
 
 # Define uma rota para o endereço raiz ("/") que responde a requisições GET
 @app.get("/")
-def let_raiz():
+def ler_raiz():
     # retorna um dicionário, que o FastAPI converte automaticamente para JSON
     return {"message": "Olá, mundo!"}
 
-
+# (SQLModel, ...): Indica que esta classe herda as funcionalidades do SQLModel. Isso significa que ela ganha superpoderes: pode ser usada tanto para validar dados em uma API (como o Pydantic faz) quanto para interagir com um banco de dados (como o SQLAlchemy faz).
 class Produto(SQLModel, table=False):
     id: Optional[str] = Field(default=None, primary_key=True)
     nome: str
